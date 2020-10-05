@@ -1,4 +1,8 @@
 BEGIN ELSE : := xx a1a 1a + :
+IF
+For
+FOR
+THEN
 adfasfd
 0002
 END

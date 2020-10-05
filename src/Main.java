@@ -71,10 +71,10 @@ public class Main {
                             getChar();
                             if(c == '='){
                                 System.out.println(strings[12]);
+                                getChar();
                             }
                             else
                                 System.out.println(strings[6]);
-                            getChar();
                             break;
                         case '+':
                             System.out.println(strings[7]);
