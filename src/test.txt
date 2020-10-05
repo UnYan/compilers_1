@@ -1,9 +1,6 @@
-BEGIN ELSE : := xx a1a 1a + :
-IF
-For
-FOR
-THEN
-adfasfd
-0002
-END
-()
+BEGIN END FOR IF THEN ELSE
+a12344 + a := :+*,()
+1a 1+1 00002000
+{
+12
+}

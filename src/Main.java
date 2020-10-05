@@ -117,6 +117,8 @@ public class Main {
     }
 
     public static String removeZero(String str) {
+        if("0".equals(str))
+            return "0";
         int len = str.length(), i = 0;
         while (i < len && str.charAt(i) == '0') {
             i++;
