@@ -44,6 +44,11 @@ public class Main {
             token = new String();
             try {
                 getNBC();
+                if((int)c == -1 || c == '\uFFFF'){
+                    reader.close();
+                    return;
+                }
+
                 if (isLetter()) {
                     while (isLetter() || isDigital()) {
                         token += c;
@@ -98,11 +103,13 @@ public class Main {
 //                            return ;
                         default:
                             System.out.println(strings[13]);
+                            reader.close();
                             return;
                     }
                 }
             }
             catch (Exception e){
+                reader.close();
                 return;
             }
         }
@@ -126,7 +133,7 @@ public class Main {
     }
 
     public static boolean isOtherThing(){
-        return (c == ' ' || c == '\n' || c == '\r' || c == '\uFFFF');
+        return (c == ' ' || c == '\n' || c == '\r');
     }
 
     public static int reserve(){
