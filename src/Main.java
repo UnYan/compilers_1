@@ -2,6 +2,7 @@ import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class Main {
     public static String fileName;
@@ -117,7 +118,7 @@ public class Main {
     }
 
     public static String removeZero(String str) {
-        if("0".equals(str))
+        if(Pattern.matches("0+",str))
             return "0";
         int len = str.length(), i = 0;
         while (i < len && str.charAt(i) == '0') {
